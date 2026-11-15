@@ -19,9 +19,9 @@ to the traits it implements.
 - `Warning` and `Counts`: the error-warning level with a waiter, and running
   counts for statistics.
 
-Its users: pic32c-hal's `can` (Microchip's M_CAN), and can-hal-embedded's
-`can-hal-bxcan` and `can-hal-fdcan` (ST), each of which had its own copy.
-Private for now, like the drivers that use it.
+Its users: [can-hal-embedded](https://github.com/aeolionics-rs/can-hal-embedded)'s
+`can-hal-bxcan` and `can-hal-fdcan` (ST's bxCAN and FDCAN), and the M_CAN
+driver of our PIC32C HAL, each of which had its own copy.
 
 # Licence
 
