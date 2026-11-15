@@ -1,0 +1,19 @@
+[package]
+name = "can-common"
+description = "What CAN controller drivers share, whatever traits they implement: transmit ordering, an event queue, a bit-timing solver, a clock, and error-warning and statistics bookkeeping"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/aeolionics-rs/can-common"
+keywords = ["can", "no-std", "embedded", "driver"]
+categories = ["embedded", "hardware-support", "no-std"]
+publish = false
+
+[features]
+defmt = ["dep:defmt"]
+
+[dependencies]
+defmt = { version = "1.0.1", optional = true }
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
